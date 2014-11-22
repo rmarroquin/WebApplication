@@ -1,0 +1,76 @@
+body {
+	background-color: #F1F0F0;
+	padding-top: 50px;
+}
+
+#contenido{
+	background-color: #FFFFFF;
+}
+
+#btnaddnew{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+
+}
+.txtcenter{
+	text-align: center;
+}
+
+p{
+	margin-bottom: 2px;
+}
+input{
+	padding: 1px 1px;
+	width: 100%;
+}
+input {	border: 1px solid black; }
+input.checkbox { border: none }
+input:focus { border: 1px dotted black; }
+input.error { border: 1px dotted red; }
+
+label{
+	padding:0;
+	padding-bottom: 2px;
+	margin-bottom: 0px;
+}
+label.error{
+	font-size: 11px;
+	color:#DF0101;
+	padding-bottom: 2px;
+}
+
+.modal-header{
+	background-color: #08298A;
+	color: #ffffff;
+	text-shadow:2px 2px #020202;
+}
+#ajaxLoader{
+	
+	background: #FFF;
+	border-radius: 4px;
+	/*border: 1px solid rgba(0,0,0,0.20);*/
+	font-size: 0.8em;
+	height:auto;
+	margin-top:10px;
+	outline: none;
+	padding: 4px;
+	text-align: center;
+	width:100%;
+}
+
+#ajaxLoader img {
+	vertical-align: middle;
+}
+footer{
+	text-align: center;
+}
+.close{
+	color: #FFFFFF;
+}
+
+
+/*SELECT `EmployeeID`, `LastName`, `FirstName`, `Title`, `TitleOfCourtesy`, 
+`BirthDate`, `HireDate`, `Address`, `City`, `Region`, `PostalCode`, `Country`,
+`HomePhone`, `Extension`, `Photo`, `Notes`, `ReportsTo`, `PhotoPath` 
+FROM `employees` WHERE 1*/
