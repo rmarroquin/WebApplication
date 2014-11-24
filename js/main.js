@@ -45,16 +45,15 @@ $(function(){
 			// Mostrar efectos al guardar formulario
 			 $.ajax({
 				beforeSend: function(){
-					$('#frmaddnew .ajaxLoader').show();
-
-				},
+					$('#frmaddnew #ajaxLoader').show();
+                                                              				},
 				cache: false,
 				type:"POST",
 				dataType: "json",
 				url:"includes/phpajax.php",
 				data:str + "&accion=addUser&id="+Math.random(),
 				success: function(response){
-					$('#frmaddnew .ajaxLoader').hide();
+					$('#frmaddnew #ajaxLoader').hide();
 					alert(response.mensaje);
 					
 				},

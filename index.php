@@ -79,19 +79,12 @@ else{
 		      </div>
 		      <div class="modal-body">
 		      	<!-- Formulario para JQuery Validation -->
-		        <form class="cmxform form-horizontal" id="frmaddnew" method="get" action="" role="form">
+		        <form class="form-horizontal" id="frmaddnew" name="frmaddnew" method="POST" action="" role="form">
 		        	<fieldset id="ocultos">
 		        		<input type="hidden" id="accion" name="accion" class="{required:true}"/>
 		        		<input type="hidden" id="id_user" name="id_user" class="{required:true}" value="0"/>
 	    			</fieldset>
 					<fieldset>
-					    <!-- <legend>Please provide your name, email address (won't be published) and a comment</legend> -->
-					    <!-- <p>
-					      <label for="ccodigo">Código:</label>
-					    </p>  
-					      <input placeholder="Ingrese código" id="EmployeeID" name="EmployeeID"  maxlength="11" type="text" required/>
-					   
-					    <p> -->
 					    	<label for="cname">Ingrese Apellidos:</label>
 					    </p>	
 					    	<input id="LastName" name="LastName" maxlength="20"type="text" required>
@@ -105,36 +98,20 @@ else{
 					    	<label for="puesto">Ingrese el Puesto:</label>
 					    </p>	
 					    	<input id="Title" name="Title" maxlength="30" type="text" required>
-					    
-					    <!-- <p>
-					      <label for="cemail">E-Mail (required)</label>
-					      <input id="cemail" type="email" name="email" required/>
-					    </p>
-					    <p>
-					      <label for="curl">URL (optional)</label>
-					      <input id="curl" type="url" name="url"/>
-					    </p>
-					    <p>
-					      <label for="ccomment">Your comment (required)</label>
-					      <textarea id="ccomment" name="comment" required></textarea>
-					    </p> -->
-					   
-						<p></p>
-						<p class="txtcenter">	
-						<button class="btn btn-primary" type="submit"><i class="fa fa-floppy-o"></i> Guardar</button>
-						</p>
-						
+						<p></p>						
 				  	</fieldset>
-				  	<fieldset id="ajaxLoader" class="ajaxLoader hide">
-				  		<img src="images/default-loader.gif" alt="">
-				  		<span>Espere un momento...</span>				  	
-				  	</fieldset>
+				  	<div id="modal-footer" class="modal-footer">
+				  		<button type="submit" id="btnagregar" class="btn btn-primary"><i class="fa fa-floppy-o"></i> Guardar</button>
+		        		<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times-circle"></i> Cancelar</button>
+		        		<fieldset id="ajaxLoader" class="hide">
+				  			<img src="images/default-loader.gif" alt="">
+				  			<span>Espere un momento...</span>				  	
+				  		</fieldset>
+				  		
+		      		</div>
 				</form>
 		      </div>
-<!-- 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-		        <button type="button" class="btn btn-primary">Guardar</button>	
-		      </div> -->	  
+	  
 		    </div>
 		  </div>
 		</div>
